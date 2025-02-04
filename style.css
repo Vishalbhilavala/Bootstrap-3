@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .logo-size{
     width: 40px;
 }
@@ -20,6 +23,22 @@
 .set-heght-2{
     height: 100px;
 }
+
+
+
+
+.navbar-toggler {
+    padding: 6px 10px;
+    border: none;
+}
+
+.set-height {
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+}
+
+
 
 /* main */
 .first-div{
