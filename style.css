@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo-size{
+    width: 40px;
+}
+
+.set-heght{
+    width:40%;
+    height: 100px;
+    background-color: blue;
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: aliceblue;
+}
+.set-heght-2{
+    height: 100px;
+}
+
+/* main */
+.first-div{
+    width: 100vw;
+    height: 100vh;
+}
+.image{
+    width: 65vw;
+    height: 85vh;
+    /* background-color: red; */
+    background: url('./Images/guru.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    opacity: 0.2;
+}
+.Blue-back{
+    width: 35vw;
+    height: 85vh;
+    background-color: blue;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+}
+
+.image-3{
+    width: 35vw;
+    height: 60vh;
+    /* background-color: red; */
+    background: url('./Images/guru.jpg');
+    background-size: cover;
+    position: absolute;
+    clip-path: ellipse(34% 46% at 51% 50%);
+    bottom: 0;
+    right: 20%;
+}
+
+.transp{
+    z-index: 451;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.second-sec-img{
+    top: 42%;
+    left: 45%;
+
+}
+.sec-2-image-1{
+clip-path: polygon(80% 100%, 100% 76%, 100% 0, 0 0, 0 100%);
+border-radius: 20px;
+}
+.sec-2-image-2{
+    clip-path: polygon(0 76%, 20% 100%, 100% 100%, 100% 0, 0 0);
+    border-radius: 20px;
+}
+.sec-2-image-3{
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 78% 0);
+    border-radius: 20px;
+}
+.sec-2-image-4{
+    clip-path: polygon(0 26%, 22% 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 20px;
+}
+.cru-img{
+    width: 200px;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+.cru-img-second{
+    width: 250px;
+    height: 35vh;
+    object-fit: cover;
+    /* border-radius: 30px; */
+}
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    border-radius: 30px;
+    background-color: rgb(251, 247, 247);
+    cursor: pointer;
+
+}
+.shadow-second-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: rgb(251, 247, 247);
+    cursor: pointer;
+
+}
+.visible{
+    display: none;
+    color: rgb(0, 0, 0);
+    /* background-color: red; */
+}
+.hey:hover .visible{
+    display: block;
+    cursor: pointer;
+}
+.bg-img{
+    background: url('./Images/guru.jpg');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.bg-trans{
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+}
+.bg-trans-2{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+.shadow-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: rgb(251, 247, 247);
+
+}
+.video-hover:hover .shadow-video{
+    display: none;
+}
+.video-hover:hover iframe{
+    transform: scale(1.2);
+    position: relative;
+    z-index: 100;
+}
+.cursor-point svg{
+    cursor: pointer;
+}
+.second-last-sec{
+    padding: 50px;
+    margin: auto;
+    width: 50vw;
+}
+.third-last-sec{
+    padding: 20px 10px 0px;
+}
+.fourth-last-sec{
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+.transp {
+    width: 40vw;
+}
+
+@media (max-width:1200px){
+    .video-3{
+        display: none;
+    }
+}
+@media (max-width:800px){
+    .video-2{
+        display: none;
+    }
+    .video-1 iframe{
+        width: 100vw;
+    }
+    .second-last-sec{
+        width: 100vw;
+    }
+    .fourth-last-sec-3{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    .second-last-sec{
+        padding: 50px 10px 0px;
+    }
+    .fourth-last-sec-2{
+        display: none;
+    }
+    .fourth-last-sec{
+        padding-bottom: 5px;
+    }
+}
+@media (max-width:530px){
+    .our-sect-hide-2{
+        display: none;
+    }
+}
+@media (max-width:580px){
+    
+}
+@media (max-width:700px){
+    .third-last-sec{
+        flex-wrap: wrap;
+        padding:20px 0px 0px !important;
+    }
+    .first-div{
+        width: 100%;
+    }
+    .Blue-back{
+        display: none;
+    }
+    .main-div-sec-1{
+        width: 100vw;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+    .transp {
+        top: 2%;
+        left: 2%;
+        width: 90% !important;
+    }
+    .image-3{
+        width: 100vw;
+        height: 20vh;
+        background: url('./Images/guru.jpg');
+        background-size: cover;
+        position: absolute;
+        border-radius: 20px;
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        top: 47%;
+        left: 0%;
+    }
+    .set-heght {
+        width: 80%;
+    }
+}
+@media (max-width:750px){
+    .our-sect-hide-3{
+        display: none;
+        gap: none !important;
+    }
+}
+@media (max-width:900px){
+   
+}
+@media(max-width:1000px){
+    .fourth-last-sec-4{
+        display: none !important;
+    } 
+}
+@media(max-width:280px){
+    .our-sect-hide-1{
+        width:60vw;
+        height: 20vh;
+    }
+}
+@media(max-width:383px){
+    .image-3{
+        top: 45%;
+        left: 0%;
+    }
+    .size-change-383px{
+        font-size   : 12px;
+    }
+}
+@media(max-width:263px){
+    .image-3{
+        top: 50%;
+        left: 0%;
+    }
+
+}
